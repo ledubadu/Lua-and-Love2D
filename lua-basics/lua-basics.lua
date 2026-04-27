@@ -57,7 +57,50 @@ for i = 1, 10, 1 do
 end
 ]]
 -- this is reversing the loop
-
+--[[
 for i = 10, 1, -2 do
     print(i)
 end
+]]
+
+-- while loops
+-- this is an infinite loop
+--[[
+while true do 
+    print("mike")
+end 
+]]
+
+-- this is better
+--[[
+local count = 0
+
+while true do
+    count = count + 1
+    
+    print("Jeff".. count)
+    
+    if count > 10 then
+        break
+    end
+end
+]]
+-- shorter version
+--[[
+local count = 0
+
+while count < 10 do
+    count = count + 1
+    print("jeff" .. count)
+end
+]]
+-- this repeat loop will run at least once
+
+local count = 10
+repeat
+    count = count + 1
+    
+    print("mike")
+until count > 10
+
+-- vid time 1 hour 03 seconds
