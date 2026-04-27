@@ -25,5 +25,39 @@ asdgasdg
         asdfasdf
 print (x) ]]
 
+-- print("Hello, World!")
 
+-- if statement
+--[[
+local age = 15
 
+local name = age > 18 and "Mike" or "Jeff"
+
+print (name)
+
+if true then
+    name = "Luke"
+end
+
+print (name)
+]]
+
+-- loops
+
+-- this will count to 1 to 10
+--[[
+for i = 1 , 10 do
+    print (i)
+end
+]]
+-- this is with steps and 1 is default
+--[[
+for i = 1, 10, 1 do
+    print(i)
+end
+]]
+-- this is reversing the loop
+
+for i = 10, 1, -2 do
+    print(i)
+end
