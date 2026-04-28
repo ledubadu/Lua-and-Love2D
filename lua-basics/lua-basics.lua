@@ -95,12 +95,14 @@ while count < 10 do
 end
 ]]
 -- this repeat loop will run at least once
-
-local count = 10
+--[[
+local count = 10 -- this makes the loop to play at least once
+local count = 1 -- this makes the loop to print "mike" 10 times
 repeat
     count = count + 1
     
-    print("mike")
+    print("mike" .. count)
 until count > 10
-
+]]
 -- vid time 1 hour 03 seconds
+
