@@ -79,7 +79,7 @@ io.close()
 ]]
 
 -- 2nd method of making and writing to a file
-
+--[[
 local file = io.open ("myfile.txt", "w") -- w is write
 
 if file ~= nil then
@@ -87,9 +87,14 @@ if file ~= nil then
 	file:close()
 else
 	print("could not open file")
-end 
+end
+]]
 -- to read print(file:read("*all")
 -- to read line print(file:read("*line") reads only 1 line, can be done multiple times to read lines in a file
 -- w to write
 -- i to read
 -- a to append meaning putting something at the end of the file/line of a file
+
+-- custom modules
+
+-- vid time 1 hour 39 minutes
