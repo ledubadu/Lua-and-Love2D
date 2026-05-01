@@ -98,3 +98,30 @@ end
 -- custom modules
 
 -- vid time 1 hour 39 minutes
+-- a custom table returns a table or an array that returns a single table when it is called, so this is any file that is not the main.lua file
+
+-- a lua package is a file of modules that is hand crafted and could be used any time when called inside a lua file when needed or installed
+--[[
+local mod = require("custom")
+
+print(mod.sum(10,5))
+
+mod.sayHello("mike")
+
+]]
+-- oop
+--[[
+local function Pet()
+	return {
+		--name = "Charlie"
+		name = name or "Charlie"
+		daysAlive = age * 365 
+}
+end
+
+local cat = Pet()
+local dog = Pet("Jack")
+
+print(cat.name)
+print(dog.name)
+]]
