@@ -1,5 +1,5 @@
 
-print("Hello World")
+-- print("Hello World")
 -- comments
 --[[
 	multi line comments
@@ -30,7 +30,7 @@ io.write(type(madeUpVar), "\n") -- this is nil
 ]]
 
 -- math funciton 
-
+--[[
 io.write ("5 + 3 = ", 5+3, "\n")
 io.write ("5 - 3 = ", 5-3, "\n")
 io.write ("5 * 3 = ", 5*3, "\n")
@@ -48,5 +48,32 @@ io.write ("min(2,3) : ", math.min(2,3), "\n") -- minimum number selected
 io.write ("pow(8,2) : ", math.pow(8,2), "\n") -- 8 to the power of 2
 io.write ("sqrt(64) : ", math.sqrt(64), "\n") -- square root of 64
 
+io.write("math.random(): ", math.random(), "\n")
+io.write("math.random(10): ", math.random(10), "\n")
+io.write("math.random(5,100): ", math.random(5,100), "\n")
+
+math.randomseed(os.time())
+
+print(string.format("Pi = %.10f", math.pi))
+
+
+]]
+
+--conditionals
+--[[
+age = 13
+
+if age < 16 then 
+	io.write("You can go to school", "\n")
+	local localVar = 10
+elseif (age <= 16) and (age <18) then 
+	io.write("you can drive","\n")
+else
+	io.write("you can vote", "\n")
+end
+]]
+-- print(localVar)
+-- there are no ternary operators and also no switch conditional
+-- time 16:38
 
  
