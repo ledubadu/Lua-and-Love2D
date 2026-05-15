@@ -76,4 +76,43 @@ end
 -- there are no ternary operators and also no switch conditional
 -- time 16:38
 
+ -- looping
+ --[[
+ i = 1
  
+ while(i<=10) do
+ 	io.write(i)
+ 	i=i+1
+ 	if i == 8 then break end
+ end
+ ]]
+ --[[
+ repeat 
+ 	io.write("Enter your guess : ")
+ 	guess = io.read()
+ 
+ until tonumber(guess) == 15
+ 
+ for i = 1, 10, 1 do
+ 	io.write(i)
+ end
+ ]]
+ 
+ --tables
+ --[[
+ aTable = {}
+ for i = 1, 10 do 
+ 	aTable[i] = i
+ end
+ io.write("First : ", aTable[1], "\n")
+ 
+ io.write("number of items: ", #aTable, "\n")
+ ]]
+ 
+ -- functions
+ 
+ function getSum(num1, num2)
+ 	return num1 + num2
+ end
+ 
+ print(string.format("5 + 2 = %d", getSum(5,2)))
