@@ -8,6 +8,7 @@ function love.load()
 		resizable = false,
 	})
 end
+
 function love.keypressed(key)
 	if key == "escape" then
 		love.event.quit()
