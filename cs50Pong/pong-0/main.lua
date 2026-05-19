@@ -19,7 +19,7 @@
 
 -- Global vars
 -- as these are all caps, these are treated as constants
-
+--[[
 WINDOW_WIDTH = 1280
 WINDOW_HEIGHT = 720
 
@@ -34,3 +34,4 @@ end
 function love.draw()
 	love.graphics.printf("Hello Pong!", 0, (WINDOW_HEIGHT / 2) - 6, WINDOW_WIDTH, "center")
 end
+]]
